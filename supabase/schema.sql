@@ -10,7 +10,7 @@ create table if not exists public.users (
 create table if not exists public.dsar_requests (
   id uuid primary key default gen_random_uuid(),
   jurisdiction text not null,
-  right text not null, -- e.g., Right to Know, Delete, etc.
+  privacy_right text not null, -- e.g., Right to Know, Delete, etc.
   first_name text not null,
   last_name text not null,
   email text not null,
