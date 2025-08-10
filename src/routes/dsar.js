@@ -7,7 +7,7 @@ export const router = express.Router();
 
 const DsArInput = z.object({
   jurisdiction: z.string().min(2),
-  right: z.string().min(2),
+  privacy_right: z.string().min(2),
   first_name: z.string().min(1),
   last_name: z.string().min(1),
   email: z.string().email(),
